@@ -11,7 +11,8 @@ import pandas as pd
 import hashlib
 import typing
 import random
- 
+import psutil
+
 # Deterministic randomness for the assert at the end
 random.seed(42)
  
@@ -29,6 +30,10 @@ class Transform:
         self.var = var
  
     def transform(self, df: pd.DataFrame) -> pd.DataFrame:
+        mem_profile = psutil.virtual_memory()
+        print("Transforming {} | Memory Usage = {} | percent = {}".format(self.var,
+                                                                          mem_profile.used,
+                                                                          mem_profile.percent))            
         df_new = pd.DataFrame({self.var: DATA})
         return update_df(df, df_new)
  
@@ -46,8 +51,13 @@ class Pipeline:
         return self.df
  
 if __name__ == '__main__':
+    print(psutil.virtual_memory())    
     pipe = Pipeline()
     df = pipe.run()
- 
+    
+    mem_profile = psutil.virtual_memory()
+    print("Memory Usage = {} | percent = {}".format(mem_profile.used,
+                                                    mem_profile.percent))
+    print(df.info())
     # Dont break the test
     assert hashlib.sha256(pd.util.hash_pandas_object(df, index=True).values).hexdigest() == '867567dc7d46f77af2bca9804ac366a5165d27612de100461b699bd23094ab90'

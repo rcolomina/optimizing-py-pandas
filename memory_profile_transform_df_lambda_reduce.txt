@@ -1,0 +1,29 @@
+svmem(total=8287670272, available=5960126464, percent=28.1, used=1862823936, free=4920430592, active=1626304512, inactive=1292046336, buffers=201826304, cached=1302589440, shared=200744960, slab=200318976)
+entering run
+Transforming v0 | Memory Usage = 1862823936 | percent = 28.1
+Transforming v1 | Memory Usage = 2023870464 | percent = 30.0
+Transforming v2 | Memory Usage = 1863987200 | percent = 28.1
+Transforming v3 | Memory Usage = 2023952384 | percent = 30.1
+Transforming v4 | Memory Usage = 1864491008 | percent = 28.2
+Transforming v5 | Memory Usage = 2023866368 | percent = 30.1
+Transforming v6 | Memory Usage = 1864327168 | percent = 28.2
+Transforming v7 | Memory Usage = 2023817216 | percent = 30.1
+Transforming v8 | Memory Usage = 1864757248 | percent = 28.2
+Transforming v9 | Memory Usage = 2024321024 | percent = 30.1
+Memory Usage = 3470680064 | percent = 47.6
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 20000000 entries, 0 to 19999999
+Data columns (total 10 columns):
+v0    float64
+v1    float64
+v2    float64
+v3    float64
+v4    float64
+v5    float64
+v6    float64
+v7    float64
+v8    float64
+v9    float64
+dtypes: float64(10)
+memory usage: 1.5 GB
+None
