@@ -46,6 +46,12 @@ class Pipeline:
         ]
  
     def run(self):
+
+        mem_profile = psutil.virtual_memory()
+        print("Memory Usage = {} | percent = {}".format(mem_profile.used,
+                                                        mem_profile.percent))
+     
+        
         for t in self.transforms:
             self.df = t.transform(self.df)
         return self.df
