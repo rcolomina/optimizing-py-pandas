@@ -52,7 +52,6 @@ class Pipeline:
         self.transforms = [Transform(f'v{i}') for i in range(TRANSFORMS)]
         
     def run(self):
-        print("entering run")
         ## USING REDUCE
         from functools import reduce
         mylambda = lambda df,t:t.transform(df)
