@@ -27,10 +27,10 @@ DATA = [random.random() for _ in range(ROWS)]
 def update_df(df_orig: pd.DataFrame, df_new: pd.DataFrame, col) -> pd.DataFrame:
     # CONCAT ONTO DATAFRAME A NEW COLUMN
     return pd.concat((df_orig, df_new),
-                     axis=1)#,
-                     #ignore_index=True,
-                     #sort=False,
-                     #copy=False)
+                     axis=1,
+                     ignore_index=True,
+                     sort=False,
+                     copy=False)
 class Transform:
     """A transform that adds a column of random data"""
  
