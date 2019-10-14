@@ -1,6 +1,6 @@
 # Optimising Pandas Concatenation
 
-This project is a software analysis investigating different ways to optimise concatenation of pandas data frames. For this analysis the following machine has been used:
+This project is a software analysis to investigate different ways to optimise concatenation of pandas data frames. For this analysis the following machine has been used:
 
 * Memory: 7.7 GiB
 * Processor: Intel Celeron CPU G 1840 @ 2.80Ghz x2
@@ -8,7 +8,7 @@ This project is a software analysis investigating different ways to optimise con
 
 This project has been focus on improving a given source code (see file "transform_original_code.py") due to it is not optimal in memory usage on forming pandas concatenation for its data frames. Thus, a memory profile was generated and dumped into a text file as starting point. This can be found in the text file "memory_profile_transform_original_code.txt".
 
-A first attempt of optimisation has bene doing a pre-allocation of memory, which was quite reasonable idea for keeping constant the memory usege during all the process of concatenation. This is potentialy good idea due to the size of the final pandas data frame to configure was known beforehand. However, the results optained were shown that despite of a constant amount of memory was achieved, the figure was even higher than the maximum memory usage obtained from the original source code analysis. This source code can be found at "transform_df_preallocation.py" and a memory profiler in the text file "memory_profile_transfrom_df_preallocation.txt". To execute it the analysis execute the script:
+A first attempt of optimisation was done doing a pre-allocation of memory, which was quite reasonable idea for keeping constant the memory usege during all the process of concatenation. This is potentialy good idea due to the size of the final pandas data frame to configure was known beforehand. However, the results optained were shown that despite of a constant amount of memory was achieved, the figure was even higher than the maximum memory usage obtained from the original source code analysis. This source code can be found at "transform_df_preallocation.py" and a memory profiler in the text file "memory_profile_transfrom_df_preallocation.txt". To execute it the analysis execute the script:
 
 $ python transform_df_preallocation.py
 
