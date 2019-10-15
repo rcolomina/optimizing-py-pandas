@@ -71,13 +71,13 @@ class Pipeline:
                 
         with open('df_all.bin','rb') as f:
             mem_use()
-            print("Building dark data array from binary file")
+            print("Building dask data array from binary file")
             dda = da.from_array(np.transpose(np.frombuffer(f.read(),
                                                            dtype=np.float64).reshape(TRANSFORMS,
                                                                                      ROWS)),
                                 chunks=5000)
             mem_use()
-            print("Creating dark data frame from dda")
+            print("Creating dask data frame from dda")
             ddf = dd.from_array(dda)
             mem_use()
         
