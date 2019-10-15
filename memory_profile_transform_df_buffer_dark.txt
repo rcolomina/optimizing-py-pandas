@@ -1,0 +1,20 @@
+svmem(total=8287678464, available=5110530048, percent=38.3, used=2717577216, free=3311874048, active=2276995072, inactive=2249981952, buffers=92696576, cached=2165530624, shared=171376640, slab=220028928)
+Transforming v0 | Memory Usage = 2718081024 | percent = 38.1
+Transforming v1 | Memory Usage = 2718711808 | percent = 38.1
+Transforming v2 | Memory Usage = 2718744576 | percent = 38.2
+Transforming v3 | Memory Usage = 2718855168 | percent = 38.2
+Transforming v4 | Memory Usage = 2719588352 | percent = 38.2
+Transforming v5 | Memory Usage = 2720567296 | percent = 38.3
+Transforming v6 | Memory Usage = 2719617024 | percent = 38.3
+Transforming v7 | Memory Usage = 2719707136 | percent = 38.3
+Transforming v8 | Memory Usage = 2719858688 | percent = 38.3
+Transforming v9 | Memory Usage = 2719506432 | percent = 38.4
+Memory Usage = 2719293440 | percent = 38.4
+Building dark data array from binary file
+Memory Usage = 2719293440 | percent = 38.4
+Creating dark data frame from dda
+Memory Usage = 4333924352 | percent = 57.8
+Memory Usage = 4333924352 | percent = 57.8
+Sleep another 5 seconds before test
+** HERE IS WHERE THE TEST STARTS **
+TEST OK
