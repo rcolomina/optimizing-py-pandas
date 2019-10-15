@@ -37,9 +37,9 @@ To execute this approach type in the following command:
 
 $ python transform_df_lambda_reduce.py
 
-## Binary Buffer with Dark Data Frames
+## Binary Buffer File plus Dark Data Frames
 
-A third approach was done using a binary buffer to store all the data frames columns created during the process within a single binary file. After this, dark data frames is used to produce in chunks a final data frame from this binary file stored in disk. This approach has demonstrated a constant low memory usage during the creations of the intermediate data frame columns beating the original source code during all the process;  but it's got still a peak of memory usage when all these pieces are bringing together into a final dark data frame. Its memory profile is found in the following text file:
+A third approach was attempted using a single binary buffer to store all the columns data frames created during transformations. Afterwards, a dark data array is loaded from the latter binary file stored in disk, to produce in chunks a final dark data frame. This approach has demonstrated a constant low memory usage during all the creations of intermediate data frame columns, beating the original source code;  but it's got still a peak of memory usage when all these pieces are bringing together into a final dark data frame. Its memory profile is found in the following text file:
 
 * memory_profile_transform_df_buffer_dark.txt
 
