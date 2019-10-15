@@ -91,7 +91,7 @@ if __name__ == '__main__':
     print("Sleep another 5 seconds before test")
     time.sleep(5)    
     print("** HERE IS WHERE THE TEST STARTS **")
-    df = df.compute() # tranforming dark data frame to pandas dataframe
+    df = df.compute() # tranforming dask data frame to pandas dataframe
     # Dont break the test
     assert hashlib.sha256(pd.util.hash_pandas_object(df, index=True).values).hexdigest() == '867567dc7d46f77af2bca9804ac366a5165d27612de100461b699bd23094ab90'
     print("TEST OK")
