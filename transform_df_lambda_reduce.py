@@ -65,9 +65,13 @@ class Pipeline:
             write_df(df,k) # write df on file 
             del df # release memory
                     
-        df_from_pickles = pd.concat([pd.read_pickle("/tmp/data_frame_df"+str(i)+".pickle") for i in range(0,5)],
+        df_from_pickles = dd.concat([pd.read_pickle("/tmp/data_frame_df"+str(i)+".pickle") for i in range(0,5)],
                                     axis=1)
 
+        mem_profile = psutil.virtual_memory()
+        print("Memory Usage = {} | percent = {}".format(mem_profile.used,
+                                                        mem_profile.percent))
+        
         return df_from_pickles
         
 if __name__ == '__main__':
