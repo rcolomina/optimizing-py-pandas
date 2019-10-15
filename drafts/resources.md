@@ -6,3 +6,4 @@
 * https://towardsdatascience.com/why-every-data-scientist-should-use-dask-81b2b850e15b
 * https://towardsdatascience.com/trying-out-dask-dataframes-in-python-for-fast-data-analysis-in-parallel-aa960c18a915
 * https://stackoverflow.com/questions/40100176/can-dask-parralelize-reading-fom-a-csv-file
+* https://dzone.com/articles/python-memory-issues-tips-and-tricks
