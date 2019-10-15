@@ -8,7 +8,7 @@ This project is a software analysis to investigate different ways to optimise co
 
 ## Accumulating Columns Data Frames (Original Source Code Approach)
 
-The original source code accumulates column pandas data frames into a single big pandas frame. The problem with this approach coming from it is producing an increasingly memory usage during the process of data frame creation when concatenation recursively all the columns. Thus, This leads to a memory overflow when many columns are appended together. Its memory profile can be found at the following text file:
+The original source code accumulates column pandas data frames into a single big pandas frame. The problem with this approach is coming from memory increase during all the process of the data frame construction when these are concatenated recursively column by column into a final big pandas data frame. Thus, this approach leads to a memory overflow when many columns need to be appended together. This method memory profile is found at the following text file:
 
 * memory_profile_transform_original_code.txt
 
