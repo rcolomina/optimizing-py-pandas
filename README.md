@@ -73,9 +73,9 @@ Compiling results from text memory profiles produced before it can be created a 
 * M-3 Binary Buffering and Dask
 * M-4 Generator
 
-Summary of memory profiles of these methods.
+At follows a summary of the memory profiles of these methods during pandas data frame creation.
 
-| Mem %   | M-0 | M-1 | M-2 | M-3 | M-4 |
+| Memory %   | M-0 | M-1 | M-2 | M-3 | M-4 |
 |  ---    | --- | --- | --- | --- | --- |
 |  Iter 1 | 39  | 52  | 41  | 38  | 37  |
 |  Iter 2 | 41  | 52  | 43  | 38  | 37  |
@@ -87,7 +87,7 @@ Summary of memory profiles of these methods.
 |  Iter 8 | 52  | 52  | 43  | 38  | 49  |
 |  Iter 9 | 54  | 52  | 41  | 38  | 51  |
 |  Iter 10 | 56 | 52  | 43  | 38  | 53  |
-|  Post Creation | 57 | 52  | 59  | 56  |
+|  Post Creation | 57 | 52  | 59  | 56  ||
 
 
 As conclusions, it can be observed that M-1, M-2 and M-3 keep memory usage constant however the last peak of memory usage is still being produced. 
