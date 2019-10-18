@@ -99,5 +99,4 @@ On the machine used for aforementioned experiments the correspondence between pe
 Memory measurements have been done using the python method psutil.virtual_memory() within the source code.
 
 
-As conclusions can be observed M-1, M-2 and M-3 keep its memory usage constant during the process something that is very interesting, however its last peaks of memory persist similarly as M-2 and M-4. Despite of the array created should be stored in just 1.5 GB of memory, pandas data frame seems to uses more memory that that during the process of concatenations regardless whether this frame is created either from memory or from a file. 
-Eventually, in order to keep a data frame of 1.5 GB in memory the systems seems to use much more than the actual size of the data frame something that will lead to memory overflow in low memory machines.
+As conclusions can be observed M-1, M-2 and M-3 keep its memory usage constant during the process something that is very interesting, however its last peaks of memory persist similarly as M-0 and M-4. Despite of the array  should be stored at the end of its creations in  1.5 GB of memory, pandas data frame seems to uses more memory after the process of concatenations (completed data frame is in memory) regardless whether this frame is created either from memory or from a file. 
