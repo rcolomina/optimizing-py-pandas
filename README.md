@@ -50,3 +50,7 @@ $ pip install -r requirements.txt
 To execute this approach type in the following command:
 
 $ python transform_df_buffer_dark.py 
+
+## Using Generator as Source of Data Frame Concatenation
+
+A fourth 
