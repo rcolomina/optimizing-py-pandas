@@ -33,8 +33,7 @@ def mem_use():
 class Pipeline:
 
         
-    def run(self):
-            
+    def run(self):            
         mem_use()
         df = pd.DataFrame()
         def mygen():
