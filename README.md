@@ -53,4 +53,12 @@ $ python transform_df_buffer_dark.py
 
 ## Using Generator as Source of Data Frame Concatenation
 
-A fourth 
+A fourth approach to minimise memory for data frame creation is using a generator as argument for "pd.concat" function.  This approach has shown that memory is increasing during the period slowly buy there is still a big peak eventually when all the columns are loaded into the final data frame. Its memory profile is found in the following text file:
+
+* memory_profile_transform_df_generator.txt
+
+To execute this approach type in the following command:
+
+$ python transform_df_generator.py 
+
+
