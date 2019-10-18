@@ -83,11 +83,20 @@ At follows a summary of the memory profiles of these methods during pandas data 
 |  Iter 4 | 44  | 52  | 43  | 38  | 41  |
 |  Iter 5 | 46  | 52  | 41  | 38  | 43  |
 |  Iter 6 | 48  | 52  | 43  | 38  | 45  |
-|  Iter 7 | 50  | 52  | 41  | 38  | 47  |
-|  Iter 8 | 52  | 52  | 43  | 38  | 49  |
-|  Iter 9 | 54  | 52  | 41  | 38  | 51  |
-|  Iter 10 | 56 | 52  | 43  | 38  | 53  |
-|  Post Creation | 57 | 52  | 59  | 56  \||
+|  Iter 7   | 50  | 52  | 41  | 38  | 47  |
+|  Iter 8    | 52  | 52  | 43  | 38  | 49  |
+|  Iter 9      | 54  | 52  | 41  | 38  | 51  |
+|  Iter 10       | 56 | 52  | 43  | 38  | 53 |
+|  Post Creation | 57 | 52  | 59  | 57  | 60 | 
 
 
-As conclusions, it can be observed that M-1, M-2 and M-3 keep memory usage constant however the last peak of memory usage is still being produced. 
+Within the testing machine the correspondence between percentage and memory usage for some numbers can be seen as follows:
+| KB | GB    | Percentage |
+| 2718081024 | 2.592 | 38.1 |
+| 4333924352 | 4.133 | 57.8 |
+
+Memory measurements have been done using the python method psutil.virtual_memory() within the source code.
+
+
+As conclusions, it can be observed that M-1, M-2 and M-3 keep memory usage constant something that is very interesting,  however the last peak of memory persist as M-2 and M-4. Despite of the array created should be stored in just 1.5 GB of memory, pandas data frame uses at least double during the process of concatenations regardless it is created from memory or from file. 
+Eventually, in order to keep a data frame of 1.5 GB in memory the systems seems to use much more than the actual size of the data frame something that will lead to memory overflow in low memory machines.

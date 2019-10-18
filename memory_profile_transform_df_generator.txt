@@ -1,7 +1,18 @@
-svmem(total=8287678464, available=4975890432, percent=40.0, used=2869067776, free=4588032000, active=1983287296, inactive=1336913920, buffers=46067712, cached=784510976, shared=190828544, slab=150401024)
-Memory Usage = 2869067776 | percent = 40.0
+svmem(total=8287678464, available=4698116096, percent=43.3, used=3127676928, free=4407640064, active=2241630208, inactive=1256280064, buffers=35266560, cached=717094912, shared=211070976, slab=152383488)
+Memory Usage = 3127676928 | percent = 43.3
+Memory Usage = 3127676928 | percent = 43.3
+Memory Usage = 3127676928 | percent = 43.3
+Memory Usage = 3290550272 | percent = 45.3
+Memory Usage = 3451920384 | percent = 47.2
+Memory Usage = 3616333824 | percent = 49.2
+Memory Usage = 3778080768 | percent = 51.2
+Memory Usage = 3938492416 | percent = 53.1
+Memory Usage = 4063166464 | percent = 54.6
+Memory Usage = 4242325504 | percent = 56.8
+Memory Usage = 4414603264 | percent = 58.8
+Memory Usage = 4585066496 | percent = 60.9
 Data Frame was created
-Memory Usage = 4457832448 | percent = 59.1
+Memory Usage = 4611067904 | percent = 60.7
 <class 'pandas.core.frame.DataFrame'>
 RangeIndex: 20000000 entries, 0 to 19999999
 Data columns (total 10 columns):
