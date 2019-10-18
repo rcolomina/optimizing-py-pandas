@@ -37,9 +37,14 @@ class Pipeline:
             
         mem_use()
         df = pd.DataFrame()
-        mygen = ( pd.DataFrame({f'v{i}':np.array(DATA)}) for i in range(0,10))
-
-        return pd.concat(mygen,axis=1,copy=False)
+        def mygen():
+            mem_use()
+            for i in range(0,10):
+                mem_use()
+                yield pd.DataFrame({f'v{i}':np.array(DATA)})
+        gen = mygen()
+                
+        return pd.concat(gen,axis=1,copy=False)
         
 if __name__ == '__main__':
     print(psutil.virtual_memory())    
