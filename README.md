@@ -89,10 +89,10 @@ At follows a summary of the memory profiles of these methods during pandas data 
 |  Iter 10       | 56 | 52  | 43  | 38  | 53 |
 |  Post Creation | 57 | 52  | 59  | 57  | 60 | 
 
-
 Within the testing machine the correspondence between percentage and memory usage for some numbers can be seen as follows:
+
 | KB | GB    | Percentage |
-| --- | --    | ---        |
+| --- | ---    | ---        |
 | 2718081024 | 2.592 | 38.1 |
 | 4333924352 | 4.133 | 57.8 |
 
