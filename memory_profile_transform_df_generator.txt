@@ -1,0 +1,21 @@
+svmem(total=8287678464, available=4975890432, percent=40.0, used=2869067776, free=4588032000, active=1983287296, inactive=1336913920, buffers=46067712, cached=784510976, shared=190828544, slab=150401024)
+Memory Usage = 2869067776 | percent = 40.0
+Data Frame was created
+Memory Usage = 4457832448 | percent = 59.1
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 20000000 entries, 0 to 19999999
+Data columns (total 10 columns):
+v0    float64
+v1    float64
+v2    float64
+v3    float64
+v4    float64
+v5    float64
+v6    float64
+v7    float64
+v8    float64
+v9    float64
+dtypes: float64(10)
+memory usage: 1.5 GB
+None
+HERE WHEN TEST STARTS (sleep 10 seconds)
