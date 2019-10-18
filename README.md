@@ -67,11 +67,11 @@ $ python transform_df_generator.py
 
 Compiling results from text memory profiles produced before it can be created a table summarising memory % in order to compare them each other. The methods that have been evaluated to minimise memory on pandas data frames concatenations are the followings 
 
-* M-0 Original
-* M-1 Pre-Allocation
-* M-2 Lambda and Reduce
+* M-0 Accumulating Data Frames in Pairs
+* M-1 Pre-Allocating the whole Data Frame
+* M-2 Lambda and Reduce in formation
 * M-3 Binary Buffering and Dask
-* M-4 Generator
+* M-4 Providing Generator as input
 
 At follows a summary of the memory profiles of these methods during pandas data frame creation.
 
@@ -87,7 +87,7 @@ At follows a summary of the memory profiles of these methods during pandas data 
 |  Iter 8 | 52  | 52  | 43  | 38  | 49  |
 |  Iter 9 | 54  | 52  | 41  | 38  | 51  |
 |  Iter 10 | 56 | 52  | 43  | 38  | 53  |
-|  Post Creation | 57 | 52  | 59  | 56  ||
+|  Post Creation | 57 | 52  | 59  | 56  \||
 
 
 As conclusions, it can be observed that M-1, M-2 and M-3 keep memory usage constant however the last peak of memory usage is still being produced. 
